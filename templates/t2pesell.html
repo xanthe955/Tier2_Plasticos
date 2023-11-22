@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Tier 1: Equipos</title>
+    <link href="/templates/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="/templates/css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-mobile"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Tier 1: Proveedor de Equipos</div>
+            </a>
+            <!--************************************************************************************-->
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Inicio</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/warehouse">
+                    <i class="fas fa-fw fa-warehouse"></i>
+                    <span>Inventario</span>
+                </a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Clientes
+            </div>
+            <!-- *********************************************************************************************  -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/clientrequest">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Solicitudes</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/clientship">
+                    <i class="fas fa-fw fa-truck"></i>
+                    <span>Envios</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/clientsell">
+                    <i class="fas fa-fw fa-dollar-sign"></i>
+                    <span>Ventas</span>
+                </a>
+            </li>
+
+            <div class="sidebar-heading">
+                Tier 2: Provedor de piezas Electronicas
+            </div>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/t2peship">
+                    <i class="fas fa-fw fa-truck"></i>
+                    <span>Envios</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/t2pesell">
+                    <i class="fas fa-fw fa-store"></i>
+                    <span>Compras</span>
+                </a>
+            </li>
+            <div class="sidebar-heading">
+                Tier 2: Provedor de piezas plasticas cosmeticas
+            </div>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/t2pcship">
+                    <i class="fas fa-fw fa-truck"></i>
+                    <span>Envios</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/t2pcsell">
+                    <i class="fas fa-fw fa-store"></i>
+                    <span>Compras</span>
+                </a>
+            </li>
+            <div class="sidebar-heading">
+                Logistica
+            </div>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/logship">
+                    <i class="fas fa-fw fa-truck"></i>
+                    <span>Envios</span>
+                </a>
+            </li>
+
+            <!-- *********************************************************************************************  -->
+
+            
+            <hr class="sidebar-divider">
+        </ul>
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <div class="quantity-box text-center">
+                            <h3>Cameras</h3>
+                            <button class="btn btn-primary" id="decreaseCameras">-</button>
+                            <span id="quantityCameras">0</span>
+                            <button class="btn btn-primary" id="increaseCameras">+</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="quantity-box text-center">
+                            <h3>Biometric Sensors</h3>
+                            <button class="btn btn-primary" id="decreaseBiometricSensors">-</button>
+                            <span id="quantityBiometricSensors">0</span>
+                            <button class="btn btn-primary" id="increaseBiometricSensors">+</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="quantity-box text-center">
+                            <h3>Baseband</h3>
+                            <button class="btn btn-primary" id="decreaseBaseband">-</button>
+                            <span id="quantityBaseband">0</span>
+                            <button class="btn btn-primary" id="increaseBaseband">+</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="quantity-box text-center">
+                            <h3>Power Management</h3>
+                            <button class="btn btn-primary" id="decreasePowerManagement">-</button>
+                            <span id="quantityPowerManagement">0</span>
+                            <button class="btn btn-primary" id="increasePowerManagement">+</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="quantity-box text-center">
+                            <h3>Processor</h3>
+                            <button class="btn btn-primary" id="decreaseProcessor">-</button>
+                            <span id="quantityProcessor">0</span>
+                            <button class="btn btn-primary" id="increaseProcessor">+</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="quantity-box text-center">
+                            <h3>NAND</h3>
+                            <button class="btn btn-primary" id="decreaseNAND">-</button>
+                            <span id="quantityNAND">0</span>
+                            <button class="btn btn-primary" id="increaseNAND">+</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="quantity-box text-center">
+                            <h3>DRAM</h3>
+                            <button class="btn btn-primary" id="decreaseDRAM">-</button>
+                            <span id="quantityDRAM">0</span>
+                            <button class="btn btn-primary" id="increaseDRAM">+</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="quantity-box text-center">
+                            <h3>Accelerometer</h3>
+                            <button class="btn btn-primary" id="decreaseAccelerometer">-</button>
+                            <span id="quantityAccelerometer">0</span>
+                            <button class="btn btn-primary" id="increaseAccelerometer">+</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="quantity-box text-center">
+                            <h3>Battery</h3>
+                            <button class="btn btn-primary" id="decreaseBattery">-</button>
+                            <span id="quantityBattery">0</span>
+                            <button class="btn btn-primary" id="increaseBattery">+</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="quantity-box text-center">
+                            <h3>Microphone</h3>
+                            <button class="btn btn-primary" id="decreaseMicrophone">-</button>
+                            <span id="quantityMicrophone">0</span>
+                            <button class="btn btn-primary" id="increaseMicrophone">+</button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="quantity-box text-center">
+                            <h3>Speakers</h3>
+                            <button class="btn btn-primary" id="decreaseSpeakers">-</button>
+                            <span id="quantitySpeakers">0</span>
+                            <button class="btn btn-primary" id="increaseSpeakers">+</button>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <h4>Resumen de Cantidades</h4>
+                        <p>Total de Cameras: <span id="totalCameras">0</span></p>
+                        <p>Total de Biometric Sensors: <span id="totalBiometricSensors">0</span></p>
+                        <p>Total de Baseband: <span id="totalBaseband">0</span></p>
+                        <p>Total de Power Management: <span id="totalPowerManagement">0</span></p>
+                        <p>Total de Processor: <span id="totalProcessor">0</span></p>
+                        <p>Total de NAND: <span id="totalNAND">0</span></p>
+                        <p>Total de DRAM: <span id="totalDRAM">0</span></p>
+                        <p>Total de Accelerometer: <span id="totalAccelerometer">0</span></p>
+                        <p>Total de Battery: <span id="totalBattery">0</span></p>
+                        <p>Total de Microphone: <span id="totalMicrophone">0</span></p>
+                        <p>Total de Speakers: <span id="totalSpeakers">0</span></p>
+                        <button id="guardarCantidadesButton">Solicitar Piezas</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const buttons = [
+                { id: "Cameras", displayId: "quantityCameras", totalDisplayId: "totalCameras" },
+                { id: "BiometricSensors", displayId: "quantityBiometricSensors", totalDisplayId: "totalBiometricSensors" },
+                { id: "Baseband", displayId: "quantityBaseband", totalDisplayId: "totalBaseband" },
+                { id: "PowerManagement", displayId: "quantityPowerManagement", totalDisplayId: "totalPowerManagement" },
+                { id: "Processor", displayId: "quantityProcessor", totalDisplayId: "totalProcessor" },
+                { id: "NAND", displayId: "quantityNAND", totalDisplayId: "totalNAND" },
+                { id: "DRAM", displayId: "quantityDRAM", totalDisplayId: "totalDRAM" },
+                { id: "Accelerometer", displayId: "quantityAccelerometer", totalDisplayId: "totalAccelerometer" },
+                { id: "Battery", displayId: "quantityBattery", totalDisplayId: "totalBattery" },
+                { id: "Microphone", displayId: "quantityMicrophone", totalDisplayId: "totalMicrophone" },
+                { id: "Speakers", displayId: "quantitySpeakers", totalDisplayId: "totalSpeakers" },
+            ];
+
+            buttons.forEach(({ id, displayId, totalDisplayId }) => {
+                const decreaseButton = document.getElementById(`decrease${id}`);
+                const increaseButton = document.getElementById(`increase${id}`);
+                const quantityDisplay = document.getElementById(displayId);
+                let quantity = 0;
+
+                decreaseButton.addEventListener("click", () => {
+                    if (quantity > 0) {
+                        quantity--;
+                        updateQuantityDisplay();
+                        updateTotalDisplay();
+                    }
+                });
+
+                increaseButton.addEventListener("click", () => {
+                    quantity++;
+                    updateQuantityDisplay();
+                    updateTotalDisplay();
+                });
+
+                function updateQuantityDisplay() {
+                    quantityDisplay.textContent = quantity;
+                }
+
+                function updateTotalDisplay() {
+                    const totalDisplay = document.getElementById(totalDisplayId);
+                    totalDisplay.textContent = quantity;
+                }
+            });
+
+            const guardarCantidadesButton = document.getElementById("guardarCantidadesButton");
+            guardarCantidadesButton.addEventListener("click", updateQuantities);
+
+            function updateQuantities() {
+                const data = {
+                    cameras: parseInt(document.getElementById("quantityCameras").textContent),
+                    biometric_sensors: parseInt(document.getElementById("quantityBiometricSensors").textContent),
+                    baseband: parseInt(document.getElementById("quantityBaseband").textContent),
+                    power_management: parseInt(document.getElementById("quantityPowerManagement").textContent),
+                    processor: parseInt(document.getElementById("quantityProcessor").textContent),
+                    nand: parseInt(document.getElementById("quantityNAND").textContent),
+                    dram: parseInt(document.getElementById("quantityDRAM").textContent),
+                    accelerometer: parseInt(document.getElementById("quantityAccelerometer").textContent),
+                    battery: parseInt(document.getElementById("quantityBattery").textContent),
+                    microphone: parseInt(document.getElementById("quantityMicrophone").textContent),
+                    speakers: parseInt(document.getElementById("quantitySpeakers").textContent),
+                };
+
+                fetch('/update-quantities', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data);
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            }
+        </script>
+
+    </div>
+    </div>
+    <div style="text-align: center;">
+        <a class="btn btn-primary btn-user btn-block w-50">
+            Register Account
+        </a>
+    </div>
+</body>
+
+</html>

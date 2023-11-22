@@ -1,0 +1,3 @@
+Comandos para Tier 1
+Python -m venv venv
+pip install requests, uvicorn, fastapi 
